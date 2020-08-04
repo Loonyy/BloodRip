@@ -95,7 +95,7 @@ public class BloodRip extends BloodAbility implements AddonAbility
 			
 			displayCharge(1 / neededChargeTime * chargeTime);
 			for (int i = 0; i < (chargeTime >= neededChargeTime ? 2 : 8); i++) {
-				ParticleEffect.SMOKE.display(new Vector(0, 0.1, 0), 0.5F, this.entity.getLocation().add(0.5 - random.nextFloat(), 0.7 + random.nextFloat() / 2, 0.5 - random.nextFloat()), 257D);
+				ParticleEffect.SMOKEz.display(new Vector(0, 0.1, 0), 0.5F, this.entity.getLocation().add(0.5 - random.nextFloat(), 0.7 + random.nextFloat() / 2, 0.5 - random.nextFloat()), 257D);
 			}
 			this.lastChargeDisplay = System.currentTimeMillis();
 		}
